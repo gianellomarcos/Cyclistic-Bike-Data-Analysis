@@ -73,4 +73,4 @@ A continuación, presento los hallazgos clave de mi análisis en Power BI:
 
 ---
 
-*Proyecto creado por [Gianello Marcos] como parte del portafolio de Análisis de Datos.*
+*Proyecto creado por Gianello Marcos como parte del portafolio de Análisis de Datos.*
