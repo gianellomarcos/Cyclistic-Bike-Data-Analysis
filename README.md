@@ -2,13 +2,13 @@
 
 
 
-## 📌 Resumen del Proyecto
+## Resumen del Proyecto
 
 Este proyecto es el caso de estudio final del **Certificado Profesional de Análisis de Datos de Google**. El objetivo es analizar los datos históricos de viajes de la empresa de bicicletas compartidas Cyclistic para entender cómo difieren los usuarios anuales ("Subscribers") de los usuarios ocasionales ("Customers").
 
 
 
-## 🛠️ Herramientas Utilizadas
+## Herramientas Utilizadas
 
 * **Microsoft Excel:** Exploración inicial y limpieza de datos crudos.
 
@@ -18,7 +18,7 @@ Este proyecto es el caso de estudio final del **Certificado Profesional de Anál
 
 
 
-## 🧹 Proceso de Limpieza y Transformación de Datos
+## Proceso de Limpieza y Transformación de Datos
 
 Durante la preparación de los datos, me aseguré de garantizar la integridad del análisis mediante las siguientes acciones:
 
@@ -30,7 +30,7 @@ Durante la preparación de los datos, me aseguré de garantizar la integridad de
 
 
 
-## 📊 Visualización de Resultados
+## Visualización de Resultados
 
 
 
@@ -63,7 +63,7 @@ A continuación, presento los hallazgos clave de mi análisis en Power BI:
 
 
 
-## 💡 Conclusiones y Recomendaciones
+## Conclusiones y Recomendaciones
 
 1. **Enfoque de Marketing de Fin de Semana:** Dado que los usuarios ocasionales tienen picos de uso y mayor duración de viaje durante los fines de semana, se recomienda lanzar campañas de suscripción anual con beneficios exclusivos de fin de semana para convertirlos.
 
