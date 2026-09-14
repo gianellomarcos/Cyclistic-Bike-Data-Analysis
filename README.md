@@ -1,76 +1,91 @@
-# Análisis de Uso de Bicicletas - Caso Cyclistic (2019) 🚲
+# Análisis de Uso de Bicicletas - Caso Cyclistic (2019)
 
-
-
-## Resumen del Proyecto
-
-Este proyecto es el caso de estudio final del **Certificado Profesional de Análisis de Datos de Google**. El objetivo es analizar los datos históricos de viajes de la empresa de bicicletas compartidas Cyclistic para entender cómo difieren los usuarios anuales ("Subscribers") de los usuarios ocasionales ("Customers").
-
-
-
-## Herramientas Utilizadas
-
-* **Microsoft Excel:** Exploración inicial y limpieza de datos crudos.
-
-* **SQL Server:** Consultas, transformación de datos y cálculo de métricas agregadas.
-
-* **Power BI:** Visualización de datos y creación del dashboard interactivo.
-
-
-
-## Proceso de Limpieza y Transformación de Datos
-
-Durante la preparación de los datos, me aseguré de garantizar la integridad del análisis mediante las siguientes acciones:
-
-1. **Creación de columnas para el analisis:** Se crearon 2 columnas llamadas (`ride_length_min`) y  (`day_of_week`) para contabilizar correctamente los viajes y en los días de la semana en los que se hacen estos viajes.
-
-2. **Manejo de Outliers:** Se identificaron años de nacimiento irreales (ej. 1900). Para no afectar el volumen total de viajes en el análisis general, estas celdas se convirtieron en valores `NULL`, en lugar de eliminar las filas completas.
-
-3. **Estandarización de Fechas:** Conversión de las fechas de inicio y fin al formato ISO `YYYY-MM-DD HH:MM:SS` para su correcto procesamiento en bases de datos relacionales.
-
-
-
-## Visualización de Resultados
-
-
-
-A continuación, presento los hallazgos clave de mi análisis en Power BI:
-
-
-
-### Dashboard General
-
-![Dashboard General](dashboard_general.png)
-
-
-
-### Total de Viajes y Promedios por Tipo de Usuario
-
-![Gráficos de Usuario](visual_viajes.png)
-
-![Gráficos de Usuario](visual_prom_viaje_duracion.png)
-
-
-* *Insight:* La gran mayoría de los viajes (93.6%) son realizados por usuarios suscritos (Subscribers). Sin embargo, los usuarios ocasionales (Customers) tienen un promedio de duración de viaje significativamente mayor.
-
-
-
-### Uso por Día de la Semana
-
-![Gráfico por Día](visual_usos_semana.png)
-
-* *Insight:* Los usuarios "Subscriber" tienen un uso constante de lunes a viernes, lo que sugiere que usan las bicicletas para ir al trabajo. Los "Customers" tienen un ligero aumento durante los fines de semana.
-
-
-
-## Conclusiones y Recomendaciones
-
-1. **Enfoque de Marketing de Fin de Semana:** Dado que los usuarios ocasionales tienen picos de uso y mayor duración de viaje durante los fines de semana, se recomienda lanzar campañas de suscripción anual con beneficios exclusivos de fin de semana para convertirlos.
-
-2. **Campañas de temporada:** El uso de las bicicletas está fuertemente ligado al clima y eventos en la ciudad. Las estrategias de retención deben enfocarse en los meses previos al verano.
-
-
+Análisis del comportamiento de usuarios de un servicio de bicicletas compartidas para identificar diferencias entre usuarios suscritos y usuarios ocasionales.
+Proyecto: Caso de estudio del Certificado Profesional de Análisis de Datos de Google
+Herramientas: Excel - SQL Server - Power BI
 
 ---
 
-*Proyecto creado por Gianello Marcos como parte del portafolio de Análisis de Datos.*
+## Objetivo
+
+Analizar los datos históricos de viajes de Cyclistic para identificar diferencias en el comportamiento de los usuarios **Subscribers** y **Customers**, con el fin de encontrar oportunidades para aumentar la conversión de usuarios ocasionales a suscripciones anuales.
+
+---
+
+## Proceso
+
+Dataset → Excel → SQL Server → Power BI → Insights
+
+- Exploración y limpieza inicial de los datos.
+- Creación de variables para el análisis.
+- Tratamiento de valores inconsistentes.
+- Estandarización de fechas.
+- Análisis de duración y frecuencia de viajes.
+- Comparación del comportamiento según tipo de usuario.
+- Análisis del uso por día de la semana.
+- Creación de dashboard interactivo en Power BI.
+
+---
+
+## Preparación de datos
+
+Durante la preparación de los datos se realizaron las siguientes transformaciones:
+
+- Creación de `ride_length_min` para calcular la duración de cada viaje en minutos.
+- Creación de `day_of_week` para analizar los viajes según el día de la semana.
+- Tratamiento de años de nacimiento inconsistentes, convirtiéndolos en valores `NULL` para evitar afectar el análisis.
+- Estandarización de las fechas de inicio y fin para su procesamiento en SQL Server.
+
+---
+
+## Análisis y Visualizaciones
+
+### 1. Dashboard General
+
+![Dashboard General](dashboard_general.png)
+
+Dashboard interactivo para analizar el comportamiento general de los viajes y comparar los diferentes tipos de usuarios.
+
+---
+
+### 2. Viajes por Tipo de Usuario
+
+![Gráficos de Usuario](visual_viajes.png)
+
+La visualización permite comparar la cantidad de viajes realizados por **Subscribers** y **Customers**.
+
+Insight: El **93.6% de los viajes** corresponde a usuarios Subscribers, mientras que los Customers representan una proporción menor del total de viajes.
+
+---
+
+### 3. Duración Promedio de los Viajes
+
+![Duración Promedio](visual_prom_viaje_duracion.png)
+
+Insight: Aunque los Subscribers realizan la mayoría de los viajes, los **Customers presentan una duración promedio de viaje mayor**.
+
+---
+
+### 4. Uso por Día de la Semana
+
+![Gráfico por Día](visual_usos_semana.png)
+
+Insight: Los Subscribers presentan un uso más constante durante los días laborales, mientras que los Customers muestran un mayor uso durante los fines de semana.
+
+---
+
+## Principales hallazgos
+
+Tipo de usuario
+Los Subscribers concentran la gran mayoría de los viajes realizados.
+
+Duración
+Los Customers realizan viajes menos frecuentes, pero con una duración promedio mayor.
+
+Día de la semana
+Los patrones de uso son diferentes entre ambos grupos: los Subscribers presentan mayor actividad durante los días laborales, mientras que los Customers tienen mayor presencia durante los fines de semana.
+
+Oportunidad de negocio
+El comportamiento de los Customers representa una oportunidad para desarrollar estrategias orientadas a convertir usuarios ocasionales en suscriptores.
+
+---
