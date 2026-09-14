@@ -76,16 +76,16 @@ Insight: Los Subscribers presentan un uso más constante durante los días labor
 
 ## Principales hallazgos
 
-Tipo de usuario
+Tipo de usuario:
 Los Subscribers concentran la gran mayoría de los viajes realizados.
 
-Duración
+Duración:
 Los Customers realizan viajes menos frecuentes, pero con una duración promedio mayor.
 
-Día de la semana
+Día de la semana:
 Los patrones de uso son diferentes entre ambos grupos: los Subscribers presentan mayor actividad durante los días laborales, mientras que los Customers tienen mayor presencia durante los fines de semana.
 
-Oportunidad de negocio
+Oportunidad de negocio:
 El comportamiento de los Customers representa una oportunidad para desarrollar estrategias orientadas a convertir usuarios ocasionales en suscriptores.
 
 ---
